@@ -27,20 +27,92 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtCapacidadMaxima = new javax.swing.JTextField();
+        txtCantidadActual = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        cmdGuardar = new javax.swing.JButton();
+        cmdServirTaza = new javax.swing.JButton();
+        cmdLlenarCafetera = new javax.swing.JButton();
+        cmdVaciarCafetera = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtMostrar = new javax.swing.JTextArea();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("LA CAFETERA");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Datos:"));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setText("Cantidad Actual:");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+
+        jLabel2.setText("Capacidad:");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
+
+        txtCapacidadMaxima.setEditable(false);
+        txtCapacidadMaxima.setText("1000");
+        jPanel2.add(txtCapacidadMaxima, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 50, -1));
+
+        txtCantidadActual.setEditable(false);
+        txtCantidadActual.setText("0");
+        jPanel2.add(txtCantidadActual, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 30, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 190, 150));
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Opciones:"));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        cmdGuardar.setText("Guardar");
+        jPanel3.add(cmdGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 110, -1));
+
+        cmdServirTaza.setText("Servir Taza");
+        jPanel3.add(cmdServirTaza, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 110, -1));
+
+        cmdLlenarCafetera.setText("Llenar Cafetera");
+        jPanel3.add(cmdLlenarCafetera, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        cmdVaciarCafetera.setText("Vaciar Cafetera");
+        jPanel3.add(cmdVaciarCafetera, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 160, 260));
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Mostrar:"));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtMostrar.setEditable(false);
+        txtMostrar.setColumns(20);
+        txtMostrar.setRows(5);
+        jScrollPane1.setViewportView(txtMostrar);
+
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 190, 100));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 210, 130));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(456, 401));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +151,20 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdGuardar;
+    private javax.swing.JButton cmdLlenarCafetera;
+    private javax.swing.JButton cmdServirTaza;
+    private javax.swing.JButton cmdVaciarCafetera;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField txtCantidadActual;
+    private javax.swing.JTextField txtCapacidadMaxima;
+    private javax.swing.JTextArea txtMostrar;
     // End of variables declaration//GEN-END:variables
 }
